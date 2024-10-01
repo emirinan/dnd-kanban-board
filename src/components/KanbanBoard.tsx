@@ -133,6 +133,9 @@ function KanbanBoard() {
   function deleteColumn(id: Id) {
     const filteredColumn = columns.filter((col) => col.id !== id);
     setColumns(filteredColumn);
+
+    const newTasks = tasks.filter((t) => t.columnId != id);
+    setTasks(newTasks);
   }
 
   function updateColumn(id: Id, title: string) {
