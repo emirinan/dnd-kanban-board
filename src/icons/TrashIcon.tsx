@@ -1,11 +1,11 @@
-function TrashIcon() {
+export const TrashIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
-      className="size-6"
+      className="w-6 h-6"
     >
       <path
         strokeLinecap="round"
@@ -14,6 +14,4 @@ function TrashIcon() {
       />
     </svg>
   );
-}
-
-export default TrashIcon;
+};

@@ -1,11 +1,12 @@
-export type Id = string | number;
-export type Column = {
-  id: Id;
+export interface Column {
+  id: ID;
   title: string;
-};
+}
 
-export type Task = {
-  id: Id;
-  columnId: Id;
+export type ID = string | number;
+
+export interface Task {
+  id: ID;
+  columId: ID;
   content: string;
-};
+}
